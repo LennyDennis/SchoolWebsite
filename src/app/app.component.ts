@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { UserService } from './core';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +10,8 @@ export class AppComponent implements OnInit {
   title = 'Kamsos-Web';
 
   constructor(
-    private userService: UserService
   ) {}
 
   ngOnInit() {
-    this.userService.populate();
   }
 }
