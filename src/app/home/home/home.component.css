@@ -93,114 +93,39 @@
   opacity: 0.7;
 }
 
-/* ************************************* */
-/* downloadApp section */
-/* ************************************* */
-.downloadApp {
+.landing-card {
+  background: #003a6a;
+  border-radius: 10px;
+  color: #fff;
+  height: 300px;
+}
+.landing-card h4 {
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 10px;
 }
 
-.downloadApp h1 {
-  color: #3c4043;
-  font-size: 45px;
-  font-weight: 400;
+.landing-card h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #e70c46;
+  bottom: 0;
+  left: calc(50% - 20px);
 }
 
-.downloadApp p {
+.landing-card p {
   letter-spacing: 1px;
-  font-size: 20px;
-  color: #5f6368;
-}
-
-.downloadApp .appName {
-}
-
-.downloadApp .appDownloadBtn {
-  width: 200px;
-  border-radius: 10px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.downloadApp .appDownloadBtn:hover {
-  box-shadow: 0 40px 30px 1px rgba(0, 0, 0, 0.6);
-}
-
-.downloadApp button span img {
-  width: 50px;
-  height: 50px;
-}
-
-.downloadApp .screenshots img {
-  width: 240px;
-  height: 470px;
-  border-radius: 10px;
-  box-shadow: 0 30px 30px 1px rgba(0, 0, 0, 0.4);
-}
-
-#login {
+  font-size: 18px;
 }
 
 #main {
   position: absolute;
   bottom: 30px;
   left: 300px;
-}
-
-#signUp {
-  position: absolute;
-  bottom: 15px;
-  left: 150px;
-}
-
-/* ************************************* */
-/* features section */
-/* ************************************* */
-.features {
-  background-image: linear-gradient(120deg, #0009 80%, #0007),
-    url("src/assets/images/architecture-building.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  color: #fff;
-}
-
-.features h2 {
-  font-size: 30px;
-}
-
-.features .card {
-  margin-bottom: 20px;
-  padding: 10px 0 0 10px;
-  height: 300px;
-  border-radius: 10px;
-  background-color: #fff5;
-}
-
-.features .row img {
-  width: 70px;
-  height: 70px;
-}
-
-.features .row h3 {
-  font-weight: bold;
-}
-
-/* ************************************* */
-/* ARROW ANIMATION */
-/* ************************************* */
-.downArrow {
-  bottom: -20%;
-  left: 50%;
-}
-
-.bounce {
-  -moz-animation: bounce 3s infinite;
-  -webkit-animation: bounce 3s infinite;
-  animation: bounce 3s infinite;
 }
 
 @-moz-keyframes bounce {
@@ -272,11 +197,26 @@
   }
 }
 
-@media only screen and (max-width: 1270px) {
-  .downloadApp .screenshots img {
-    display: none;
+@media only screen and (max-width: 1125px) {
+  #school {
+    position: relative;
+    top: -50px;
+    left: -50px;
   }
 
+  #school_svg,
+  #circle_blue_school,
+  #circle_pink_school {
+    transform: scale(0.6);
+  }
+
+  #circle_pink2,
+  #circle_pink2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   #school_svg {
     display: none;
   }
@@ -304,14 +244,5 @@
   #circle_pink2,
   #circle_pink2 {
     display: none;
-  }
-
-  .downloadApp .screenshots img {
-    display: none;
-  }
-
-  .downloadApp .appDownloadBtn {
-    font-size: 20px;
-    width: 90%;
   }
 }
