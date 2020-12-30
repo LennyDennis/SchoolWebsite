@@ -1,0 +1,78 @@
+nav {
+  background-color: #003a6a;
+  box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-link {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav .nav-link:after {
+  position: absolute;
+  left: 10px;
+  bottom: 0px;
+  width: 40px;
+  height: 5px;
+  background: #e70c46;
+  content: "";
+  opacity: 0;
+  border-radius: 20px;
+  transform: translateX(-10px);
+  transition: all 0.3s;
+}
+
+nav .nav-link:hover:after {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+nav .navbar-brand {
+  display: inline-block;
+}
+
+nav .btn {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+nav .navbar-toggler img {
+  width: 30px;
+  height: 30px;
+  visibility: hidden;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo span {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.btn-outline-success {
+  color: #9aa289;
+  font-weight: 600;
+  border: 2px solid #9aa289;
+  border-radius: 0px;
+}
+
+.btn-outline-success:hover {
+  background-color: #9aa289;
+  color: #fff;
+}
+@media only screen and (max-width: 988px) {
+  nav .navbar-toggler img {
+    visibility: visible;
+  }
+}

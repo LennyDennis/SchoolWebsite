@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg fixed-top pr-1">
+  <a class="navbar-brand" routerLink="/">
+    <div class="logo container border-right">
+      <img class="mr-3" src="assets/images/kamsoslogo.png">
+    </div>
+
+  </a>
+  <span class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <img src="assets/images/menu-button.svg">
+  </span>
+
+  <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarSupportedContent">
+    <ul *appShowAuthed="false" class="navbar-nav">
+      <li class="nav-item active mx-1">
+        <a class="nav-link" routerLink="/">
+          Home
+        </a>
+      </li>
+
+      <li class="nav-item mx-1">
+        <a class="nav-link" routerLink="/about" routerLinkActive="active">
+          About Us
+        </a>
+      </li>
+      <li class="nav-item mx-1">
+        <a class="nav-link" routerLink="/departments" routerLinkActive="active">
+          Departments
+        </a>
+      </li>
+      <li class="nav-item mx-1">
+        <a class="nav-link" routerLink="/teachers" Active="active">
+          Teachers
+        </a>
+      </li>
+
+      <li class="nav-item mx-1">
+        <a class="nav-link" routerLink="/alumni" routerLinkActive="active">
+          Alumni
+        </a>
+      </li>
+      <li class="nav-item mx-1">
+        <a class="nav-link" routerLink="/contact" routerLinkActive="active">
+          Contact Us
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

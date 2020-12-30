@@ -1,0 +1,30 @@
+.aboutCont {
+  background-image: linear-gradient(to right, #44CCA188, #00857766, #fff5), url("src/assets/images/design.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  color: #000;
+}
+
+.Specialists {}
+
+ h3,  p {
+  color: #202124;
+}
+
+
+.Specialists .info p {
+  font-size: 20px;
+}
+
+.Specialists .row img {
+  width: 150px;
+  height: 150px;
+}
+
+.images-property {
+  border-radius: 10px;
+}
