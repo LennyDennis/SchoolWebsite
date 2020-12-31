@@ -1,0 +1,41 @@
+<div class="container-fluid p-5">
+
+  <div class="container">
+
+    <div class="section-header">
+      <h3 class="text-center mt-5">
+        Mathematics Department
+      </h3>
+    </div>
+
+    <div class="row my-5">
+      <div class="col-md-6">
+        <img class="img-fluid images-property" src="assets/images/about1.jpeg">
+      </div>
+      <div class="col-md-6 mt-1">
+        <h3 class="mb-3">Mathematics</h3>
+        <p>
+          Language Department comprises of the following subjects: English: Kiswahili The students are also expected to
+          undertake English Literature and Kiswahili Fasihi for the Development of students communication in both
+          National languages.....
+        </p>
+      </div>
+    </div>
+
+    <div class="section-header teachers">
+      <h3 class="text-center mt-5">
+        Teachers
+      </h3>
+    </div>
+
+    <div class="row my-3">
+      <div class="col-md-3 text-center mb-3" *ngFor='let teacher of teachers'>
+        <div class="teachers-card p-2">
+          <img class="img-fluid mb-2" src="assets/images/animal.jpg">
+          <p><strong>{{teacher.name}}</strong><br>{{teacher.subject}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

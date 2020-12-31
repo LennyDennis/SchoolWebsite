@@ -4,16 +4,21 @@ import { RouterModule } from '@angular/router';
 import { DepartmentsComponent } from './departments/departments.component';
 import { SharedModule } from '../shared';
 import { MaterialModule } from '../material';
+import { DepartmentComponent } from './department/department.component';
 
 const departmentsRouting: ModuleWithProviders = RouterModule.forChild([
   {
     path: 'departments',
     component: DepartmentsComponent
+  },
+  {
+    path: 'department',
+    component: DepartmentComponent
   }
 ]);
 
 @NgModule({
-  declarations: [DepartmentsComponent],
+  declarations: [DepartmentsComponent, DepartmentComponent],
   imports: [
     departmentsRouting,
     SharedModule,
