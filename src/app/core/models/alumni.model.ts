@@ -1,4 +1,5 @@
 export interface Alumni {
     name: string;
-    subject: string;
+    start: string;
+    end: string;
 }
