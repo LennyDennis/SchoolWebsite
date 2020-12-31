@@ -8,79 +8,40 @@
       </h3>
     </div>
 
-    <div class="row my-5">
-      <div class="col-md-6">
-        <img class="img-fluid images-property" src="assets/images/about1.jpeg">
+    <div class="my-5" *ngFor="let department of departments; index as i">
+      <div class="row" *ngIf="i%2==0">
+        <div class="col-md-6">
+          <img class="img-fluid images-property" src="assets/images/about1.jpeg">
+        </div>
+        <div class="col-md-6 mt-1">
+          <h3 class="mb-3">{{department.name}}</h3>
+          <p>
+            {{department.description}}
+          </p>
+          <div>
+            <button class="btn readMoreBtn py-1 px-3" routerLink="/register">
+              Learn More
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6 mt-1">
-        <h3 class="mb-3">Meet our Specialists</h3>
-        <p>
-          Founded in 1960, Baricho High School offers a holistic education that focuses on the intellectual, emotional,
-          psychological, social, spiritual and physical development of boys.
-        </p>
-        <div>
-          <button class="btn readMoreBtn py-1 px-3" routerLink="/register">
-            Learn More
-          </button>
+      <div class="row" *ngIf="i%2!=0">
+        <div class="col-md-6 mt-1">
+          <h3 class="mb-3">{{department.name}}</h3>
+          <p>
+            {{department.description}}
+          </p>
+          <div>
+            <button class="btn readMoreBtn py-1 px-3" routerLink="/register">
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid images-property" src="assets/images/about1.jpeg">
         </div>
       </div>
     </div>
 
-    <div class="row my-5">
-      <div class="col-md-6 mt-1">
-        <h3 class="mb-3">Meet our Specialists</h3>
-        <p>
-          Founded in 1960, Baricho High School offers a holistic education that focuses on the intellectual, emotional,
-          psychological, social, spiritual and physical development of boys.
-
-        </p>
-      </div>
-      <div class="col-md-6">
-        <img class="img-fluid images-property" src="assets/images/about1.jpeg">
-      </div>
-    </div>
-
-    <div class="row my-5">
-      <div class="col-md-6">
-        <img class="img-fluid images-property" src="assets/images/about1.jpeg">
-      </div>
-      <div class="col-md-6 mt-1">
-        <h3 class="mb-3">Meet our Specialists</h3>
-        <p>
-          Founded in 1960, Baricho High School offers a holistic education that focuses on the intellectual, emotional,
-          psychological, social, spiritual and physical development of boys.
-
-        </p>
-      </div>
-    </div>
-
-    <div class="row my-5">
-      <div class="col-md-6 mt-1">
-        <h3 class="mb-3">Meet our Specialists</h3>
-        <p>
-          Founded in 1960, Baricho High School offers a holistic education that focuses on the intellectual, emotional,
-          psychological, social, spiritual and physical development of boys.
-
-        </p>
-      </div>
-      <div class="col-md-6">
-        <img class="img-fluid images-property" src="assets/images/about1.jpeg">
-      </div>
-
-    </div>
-
-    <div class="row my-5">
-      <div class="col-md-6">
-        <img class="img-fluid images-property" src="assets/images/about1.jpeg">
-      </div>
-      <div class="col-md-6 mt-1">
-        <h3 class="mb-3">Meet our Specialists</h3>
-        <p>
-          Founded in 1960, Baricho High School offers a holistic education that focuses on the intellectual, emotional,
-          psychological, social, spiritual and physical development of boys.
-
-        </p>
-      </div>
-    </div>
   </div>
 </div>
