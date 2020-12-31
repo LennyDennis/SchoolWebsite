@@ -20,6 +20,8 @@ import {
   FooterComponent,
   HeaderComponent,
 } from './shared';
+import { AlumniComponent } from './alumni/alumni/alumni.component';
+import { TeachersComponent } from './teachers/teachers/teachers.component';
 
 
 // const rootRouting: ModuleWithProviders =RouterModule.forRoot([], { useHash: false });
@@ -27,7 +29,7 @@ import {
 
 
 @NgModule({
-  declarations: [ AppComponent, FooterComponent, HeaderComponent ],
+  declarations: [ AppComponent, FooterComponent, HeaderComponent, AlumniComponent, TeachersComponent ],
   imports: [
     BrowserModule,
     AppRoutingModule,
