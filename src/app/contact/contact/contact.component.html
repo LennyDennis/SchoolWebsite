@@ -1,89 +1,41 @@
-<div class="contact">
-  <div class="container p-5">
-    <h3 class="text-center"><strong>Get in Touch with Us</strong></h3>
-    <p class="text-center mb-5">
-      <span><i class="fas fa-gem"></i></span>
-    </p>
+<div class="container-fluid p-5">
 
+  <div class="container">
 
-
-    <h5 class="text-center">Do you have a question or comment about our Livestock Care Services? <br> Drop us a Line or Email.</h5>
-    <h5 class="text-center"> Or Visit Us for a more interactive chat.</h5>
-
+    <div class="section-header">
+      <h3 class="text-center mt-5">
+        Contact Us
+      </h3>
+    </div>
   </div>
 </div>
 
-<br>
-
 <div class="container">
-  <!-- <h3 class="mb-5">Visit Our HQs or reach out for more info</h3> -->
-  <div class="row contArea">
 
-    <div class="col-md-6 text-center">
-
-      <div class="mb-5">
-
-        <p><img src="assets/images/maps-and-flags.svg"></p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4010.4772935229894!2d39.65741031476801!3d-0.44567599967484456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMjYnNDQuNCJTIDM5wrAzOSczNC42IkU!5e1!3m2!1sen!2ske!4v1564567900036!5m2!1sen!2ske"
-          height="492" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-      </div>
-
-    </div>
+  <div class="row">
 
     <div class="col-md-6 emailForm text-center">
 
-      <p><img src="assets/images/email-filled-closed-envelope.svg"></p>
-
-      <div class="card p-3">
-
+      <div class="card p-3 mb-5">
 
         <h5 class="mb-4">Send Us a message</h5>
 
-        <div class="row">
-
-          <div class="col-md-6">
-            <mat-form-field>
-              <input matInput placeholder="First name" required>
-            </mat-form-field>
-          </div>
-
-          <div class="col-md-6">
-            <mat-form-field>
-              <input matInput placeholder="Other name">
-            </mat-form-field>
-          </div>
-
-        </div>
+        <mat-form-field>
+          <input matInput type="text" placeholder="Name" [(ngModel)]="name" required>
+          <button mat-button *ngIf="name" matSuffix mat-icon-button aria-label="Clear" (click)="name=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
 
         <br>
 
-        <div class="row">
-
-          <div class="col-md-6">
-            <mat-form-field>
-              <input matInput placeholder="County / District" [(ngModel)]="district">
-              <button mat-button *ngIf="district" matSuffix mat-icon-button aria-label="Clear" (click)="district=''">
-                <mat-icon>close</mat-icon>
-              </button>
-            </mat-form-field>
-          </div>
-
-          <div class="col-md-6">
-            <mat-form-field>
-              <input matInput type="number" placeholder="Phone" [(ngModel)]="phone" required>
-              <button mat-button *ngIf="phone" matSuffix mat-icon-button aria-label="Clear" (click)="phone=''">
-                <mat-icon>close</mat-icon>
-              </button>
-              <mat-hint>Include area code <i>eg : '+254'</i> </mat-hint>
-            </mat-form-field>
-          </div>
-
-        </div>
-
-
-
+        <mat-form-field>
+          <input matInput type="number" placeholder="Phone" [(ngModel)]="phone" required>
+          <button mat-button *ngIf="phone" matSuffix mat-icon-button aria-label="Clear" (click)="phone=''">
+            <mat-icon>close</mat-icon>
+          </button>
+          <mat-hint>Include area code <i>eg : '+254'</i> </mat-hint>
+        </mat-form-field>
 
         <br>
 
@@ -111,55 +63,31 @@
         <br>
 
         <div class="text-center">
-          <a mat-flat-button class="submitBtn" href="mailto: kowtharabdi07@gmail.com?subject=Mail from kamsos.com" type="submit">
-            Send Message
-          </a>
+
+          <button class="btn submitBtn py-1 px-4">
+            Submit
+          </button>
+
         </div>
 
       </div>
+    </div>
+
+    <div class="col-md-6">
+
+      <div class="mb-5 contact">
+        <h4 class="mb-4"><strong>Contact Details</strong></h4>
+        <p><img src="assets/images/maps-and-flags.svg"> Baricho High School</p>
+
+        <p> <img src="assets/images/telephone.svg">(254) 707 419 880</p>
+        <p> <img src="assets/images/email-filled-closed-envelope.svg"> info@barichohighschool.co.ke</p>
+        <p> <img src="assets/images/calendar.svg"> <strong>Monday - Friday :</strong> 8:00 AM to 5:00 PM</p>
+
+      </div>
+
     </div>
 
   </div>
 </div>
 
 <br><br>
-
-<div class="contDetail py-5">
-
-
-  <div class="container">
-
-    <div class="row">
-
-      <div class="col-md-6">
-        <h4 class="mb-4"><strong>General Contact</strong></h4>
-        <p><img src="assets/images/maps-and-flags.svg"> 70100 Garissa County. <br>
-          Township, University Way 1176.</p>
-
-        <p> <img src="assets/images/telephone.svg">(254) 720-460-332</p>
-        <p> <img src="assets/images/email-filled-closed-envelope.svg"> kamsosofficial1@gmail.com</p>
-        <p> <img src="assets/images/calendar.svg"> <strong>Monday - Friday :</strong> 9:00 AM to 5:00 PM</p>
-      </div>
-
-
-      <div class="col-md-6 text-center">
-        <h4><strong>We are Social</strong> <br> Stay Connected with us for News & Notices</h4>
-
-
-        <div class="text-center social">
-          <div class="row">
-
-            <img src="assets/images/facebook.svg">
-            <img src="assets/images/twitter.svg">
-            <img src="assets/images/linkedin.svg">
-            <img src="assets/images/google-plus.svg">
-
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</div>

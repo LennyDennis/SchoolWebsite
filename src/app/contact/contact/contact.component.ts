@@ -8,8 +8,8 @@ import {FormControl, Validators} from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  name = ''
   phone = '';
-  district = '';
   textarea = '';
 
   emailFormControl = new FormControl('', [

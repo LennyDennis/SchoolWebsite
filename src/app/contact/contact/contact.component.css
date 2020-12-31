@@ -1,54 +1,7 @@
-.contact {
-  background-image: linear-gradient(to right, #44CCA188, #00857766, #fff5), url("src/assets/images/design.png");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  color: #000;
-}
-h3 , h5{
-  color: #202124;
-
-}
-.contArea  img {
-  width: 50px;
-  height: 50px;
-}
-iframe {
-  border-radius: 10px;
-  width: 100%;
-  box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.2);
-}
-
-.contDetail {
-  background: linear-gradient(to right, #44CCA1, #00857799);
-}
-
-.contDetail img {
+.contact img {
   width: 20px;
   height: 20px;
-  margin-right: 20px;
-}
-.contDetail hr{
-  visibility: hidden;
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social img {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-}
-
-.social img:hover {
-  filter: brightness(80%);
+  margin-right: 10px;
 }
 
 .card {
@@ -65,9 +18,21 @@ iframe {
   width: 100%;
 }
 
+.submitBtn {
+  font-weight: 600;
+  transition: all 0.3s ease;
+  color: #fff;
+  background-color: #e70c46;
+}
+
+.submitBtn:hover {
+  background-color: #e70c46bb;
+  color: #fff;
+}
+
 ::ng-deep .mat-focused .mat-form-field-label {
   /*change color of label*/
-  color: green !important;
+  color: #e70c46 !important;
 }
 
 ::ng-deep.mat-form-field-underline {
@@ -77,11 +42,10 @@ iframe {
 
 ::ng-deep.mat-form-field-ripple {
   /*change color of underline when focused*/
-  background-color: green !important;
-  ;
+  background-color: #e70c46 !important;
 }
 
-input[type='number'] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -90,14 +54,14 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-::ng-deep   .submitBtn{
-  font-family: 'Quicksand', sans-serif;
+::ng-deep .submitBtn {
+  font-family: "Quicksand", sans-serif;
   color: #fff;
   background-color: #166d9e;
 }
 
 @media only screen and (max-width: 768px) {
-  .contDetail hr{
-    visibility: visible!important;
+  .contDetail hr {
+    visibility: visible !important;
   }
 }
