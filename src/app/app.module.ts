@@ -22,6 +22,8 @@ import {
 } from './shared';
 import { AlumniComponent } from './alumni/alumni/alumni.component';
 import { TeachersComponent } from './teachers/teachers/teachers.component';
+import { TeachersModule } from './teachers/teachers.module';
+import { AlumniModule } from './alumni/alumni.module';
 
 
 // const rootRouting: ModuleWithProviders =RouterModule.forRoot([], { useHash: false });
@@ -29,7 +31,7 @@ import { TeachersComponent } from './teachers/teachers/teachers.component';
 
 
 @NgModule({
-  declarations: [ AppComponent, FooterComponent, HeaderComponent, AlumniComponent, TeachersComponent ],
+  declarations: [ AppComponent, FooterComponent, HeaderComponent ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -38,6 +40,8 @@ import { TeachersComponent } from './teachers/teachers/teachers.component';
     HomeModule,
     AboutModule,
     DepartmentsModule,
+    TeachersModule,
+    AlumniModule,
     ContactModule,
     ResourcesModule,
     MaterialModule,
