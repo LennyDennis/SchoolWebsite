@@ -18,6 +18,7 @@ import {
   FooterComponent,
   HeaderComponent,
 } from './shared';
+import { DepartmentsComponent } from './departments/departments/departments.component';
 
 
 // const rootRouting: ModuleWithProviders =RouterModule.forRoot([], { useHash: false });
@@ -25,7 +26,7 @@ import {
 
 
 @NgModule({
-  declarations: [ AppComponent, FooterComponent, HeaderComponent ],
+  declarations: [ AppComponent, FooterComponent, HeaderComponent, DepartmentsComponent ],
   imports: [
     BrowserModule,
     AppRoutingModule,

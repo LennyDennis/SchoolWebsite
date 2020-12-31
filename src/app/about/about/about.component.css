@@ -1,20 +1,38 @@
-.aboutCont {
-  background-image: linear-gradient(to right, #44CCA188, #00857766, #fff5), url("src/assets/images/design.png");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  color: #000;
+.section-header h3 {
+  font-size: 32px;
+  color: #111;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
 }
 
-.Specialists {}
+.section-header h3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #e70c46;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
 
- h3,  p {
+.section-header h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #003a6a;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+h3,
+p {
   color: #202124;
 }
-
 
 .Specialists .info p {
   font-size: 20px;
