@@ -1,0 +1,11 @@
+.readMoreBtn {
+  font-weight: 400;
+  transition: all 0.3s ease;
+  color: #fff;
+  background-color: #e70c46;
+}
+
+.readMoreBtn:hover {
+  background-color: #e70c46d7;
+  color: #fff;
+}

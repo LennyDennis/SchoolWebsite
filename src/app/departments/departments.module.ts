@@ -1,23 +1,23 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { AboutComponent } from './about/about.component';
+import { DepartmentsComponent } from './departments/departments.component';
 import { SharedModule } from '../shared';
 import { MaterialModule } from '../material';
 
-const aboutRouting: ModuleWithProviders = RouterModule.forChild([
+const departmentsRouting: ModuleWithProviders = RouterModule.forChild([
   {
-    path: 'about',
-    component: AboutComponent
+    path: 'departments',
+    component: DepartmentsComponent
   }
 ]);
 
 @NgModule({
-  declarations: [AboutComponent],
+  declarations: [DepartmentsComponent],
   imports: [
-    aboutRouting,
+    departmentsRouting,
     SharedModule,
     MaterialModule
   ]
 })
-export class AboutModule { }
+export class DepartmentsModule { }

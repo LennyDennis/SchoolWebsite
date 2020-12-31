@@ -9,6 +9,8 @@ import { HomeModule } from './home/home.module';
 import { AboutModule } from './about/about.module';
 import { ContactModule } from './contact/contact.module';
 import { ResourcesModule } from './resources/resources.module';
+import { DepartmentsModule } from './departments/departments.module';
+
 
 import { MaterialModule } from './material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -18,7 +20,6 @@ import {
   FooterComponent,
   HeaderComponent,
 } from './shared';
-import { DepartmentsComponent } from './departments/departments/departments.component';
 
 
 // const rootRouting: ModuleWithProviders =RouterModule.forRoot([], { useHash: false });
@@ -26,7 +27,7 @@ import { DepartmentsComponent } from './departments/departments/departments.comp
 
 
 @NgModule({
-  declarations: [ AppComponent, FooterComponent, HeaderComponent, DepartmentsComponent ],
+  declarations: [ AppComponent, FooterComponent, HeaderComponent ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -34,6 +35,7 @@ import { DepartmentsComponent } from './departments/departments/departments.comp
     SharedModule,
     HomeModule,
     AboutModule,
+    DepartmentsModule,
     ContactModule,
     ResourcesModule,
     MaterialModule,
