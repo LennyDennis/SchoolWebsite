@@ -30,7 +30,7 @@ body p {
   position: absolute;
   display: block;
   width: 120px;
-  height: 1px;
+  height: 3px;
   background: #e70c46;
   bottom: 1px;
   left: calc(50% - 60px);
@@ -43,7 +43,7 @@ body p {
   width: 40px;
   height: 3px;
   background: #003a6a;
-  bottom: 0;
+  bottom: 1px;
   left: calc(50% - 20px);
 }
 

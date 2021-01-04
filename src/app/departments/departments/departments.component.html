@@ -19,20 +19,20 @@
             {{department.description}}
           </p>
           <div>
-            <button class="btn readMoreBtn py-1 px-3" routerLink="/register">
+            <button class="btn readMoreBtn py-1 px-3" routerLink="/department-detail/{{department.id}}">
               Learn More
             </button>
           </div>
         </div>
       </div>
-      <div class="row" *ngIf="i%2!=0">
+      <div class=" row" *ngIf="i%2!=0">
         <div class="col-md-6 mt-1">
           <h3 class="mb-3">{{department.name}}</h3>
           <p>
             {{department.description}}
           </p>
           <div>
-            <button class="btn readMoreBtn py-1 px-3" routerLink="/register">
+            <button class="btn readMoreBtn py-1 px-3" routerLink="/department-detail/{{department.id}}">
               Learn More
             </button>
           </div>

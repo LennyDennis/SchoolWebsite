@@ -24,6 +24,7 @@ import { AlumniComponent } from './alumni/alumni/alumni.component';
 import { TeachersComponent } from './teachers/teachers/teachers.component';
 import { TeachersModule } from './teachers/teachers.module';
 import { AlumniModule } from './alumni/alumni.module';
+import { DepartmentDetailComponent } from './departments/department-detail/department-detail.component';
 
 
 // const rootRouting: ModuleWithProviders =RouterModule.forRoot([], { useHash: false });
@@ -31,7 +32,7 @@ import { AlumniModule } from './alumni/alumni.module';
 
 
 @NgModule({
-  declarations: [ AppComponent, FooterComponent, HeaderComponent ],
+  declarations: [ AppComponent, FooterComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

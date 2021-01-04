@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { DepartmentsComponent } from './departments/departments.component';
 import { SharedModule } from '../shared';
 import { MaterialModule } from '../material';
-import { DepartmentComponent } from './department/department.component';
+import { DepartmentDetailComponent } from './department-detail/department-detail.component';
 
 const departmentsRouting: ModuleWithProviders = RouterModule.forChild([
   {
@@ -12,13 +12,13 @@ const departmentsRouting: ModuleWithProviders = RouterModule.forChild([
     component: DepartmentsComponent
   },
   {
-    path: 'department',
-    component: DepartmentComponent
+    path: 'department-detail/:id',
+    component: DepartmentDetailComponent
   }
 ]);
 
 @NgModule({
-  declarations: [DepartmentsComponent, DepartmentComponent],
+  declarations: [DepartmentsComponent, DepartmentDetailComponent],
   imports: [
     departmentsRouting,
     SharedModule,
