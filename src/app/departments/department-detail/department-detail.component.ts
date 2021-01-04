@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, ParamMap, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Department, Teacher } from 'src/app/core';
 
@@ -33,10 +33,23 @@ export class DepartmentDetailComponent implements OnInit {
 
   ]
 
-  constructor(
-    private route: ActivatedRoute
-  ) {}
+  constructor(private router: Router,  private route: ActivatedRoute
+    ){
+    // override the route reuse strategy
+    this.router.routeReuseStrategy.shouldReuseRoute = function(){
+       return false;
+    }
 
+    this.router.events.subscribe((evt) => {
+       if (evt instanceof NavigationEnd) {
+          // trick the Router into believing it's last link wasn't previously loaded
+          this.router.navigated = false;
+          // if you need to scroll back to top, here is the right place
+          window.scrollTo(0, 0);
+       }
+   });
+
+}
 
   ngOnInit() {
     this.id = Number(this.route.snapshot.paramMap.get('id'));
@@ -46,5 +59,7 @@ export class DepartmentDetailComponent implements OnInit {
   filterTeachersByDepartment(id){
     return this.teachers.filter(x => x.departmentId == id);
 }
+
+
 
 }
