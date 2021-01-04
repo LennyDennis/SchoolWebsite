@@ -114,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Baricho_High-Web:serve"
+            "devServerTarget": "Baricho-High-Web:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Baricho_High-Web:serve:production"
+              "devServerTarget": "Baricho-High-Web:serve:production"
             }
           }
         },
