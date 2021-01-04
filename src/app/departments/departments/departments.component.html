@@ -11,7 +11,7 @@
     <div class="my-5" *ngFor="let department of departments; index as i">
       <div class="row" *ngIf="i%2==0">
         <div class="col-md-6">
-          <img class="img-fluid images-property" src="assets/images/about1.jpeg">
+          <img class="img-fluid images-property" src="assets/images/{{department.photo}}">
         </div>
         <div class="col-md-6 mt-1">
           <h3 class="mb-3">{{department.name}}</h3>
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <img class="img-fluid images-property" src="assets/images/about1.jpeg">
+          <img class="img-fluid images-property" src="assets/images/{{department.photo}}">
         </div>
       </div>
     </div>
