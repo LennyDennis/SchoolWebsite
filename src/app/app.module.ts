@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { AboutModule } from './about/about.module';
 import { ContactModule } from './contact/contact.module';
-import { ResourcesModule } from './resources/resources.module';
 import { DepartmentsModule } from './departments/departments.module';
 
 
@@ -44,7 +43,6 @@ import { DepartmentDetailComponent } from './departments/department-detail/depar
     TeachersModule,
     AlumniModule,
     ContactModule,
-    ResourcesModule,
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
