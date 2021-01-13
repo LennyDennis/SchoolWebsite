@@ -9,6 +9,10 @@ const homeRouting: ModuleWithProviders = RouterModule.forChild([
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'home',
+    component: HomeComponent
   }
 ]);
 
