@@ -71,6 +71,9 @@ nav .navbar-toggler img {
   background-color: #9aa289;
   color: #fff;
 }
+.active {
+  color: #e70c46 !important;
+}
 @media only screen and (max-width: 988px) {
   nav .navbar-toggler img {
     visibility: visible;
